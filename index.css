@@ -1,0 +1,148 @@
+@keyframes to-top {
+	from {
+		transform: translate(0, 1000px);
+		opacity: 0%;
+	}
+	to {
+		transform: translate(0, 0);
+		opacity: 100%;
+	}
+}
+
+@keyframes to-bottom {
+	from {
+		transform: translate(0, -1000px);
+		opacity: 0%;
+	}
+	to {
+		transform: translate(0, 0);
+		opacity: 100%;
+	}
+}
+
+@keyframes to-right {
+	from {
+		transform: translate(-1000px, 0);
+		opacity: 0%;
+	}
+	to {
+		transform: translate(0, 0);
+		opacity: 100%;
+	}
+}
+
+@keyframes to-left {
+	from {
+		transform: translate(0, 1000px);
+		opacity: 0%;
+	}
+	to {
+		transform: translate(0, 0);
+		opacity: 100%;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
+}
+
+.btn-primary-custom {
+	background-color: #ca0c64;
+	box-shadow: -1px 2px 5px #ca0c64;
+}
+.btn-primary-custom-std {
+	background-color: #ca0c64;
+}
+.btn-decoration {
+	box-shadow: -1px 2px 5px #ca0c64 !important;
+}
+.color-primary-custom {
+	color: #ca0c64;
+}
+.decoration {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: -1;
+	/* top: -364.94px; */
+	/* left: 541.93px; */
+	background: radial-gradient(
+		43.61% 43.61% at 50% 50%,
+		rgba(221, 0, 100, 0.1) 0%,
+		rgba(221, 0, 100, 0) 100%
+	);
+}
+.decoration-2 {
+	top: unset;
+}
+
+.navbar {
+	background-color: unset !important;
+}
+.main-container {
+	flex-direction: column;
+}
+.main-container h1 {
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+.bottom-part {
+	margin-left: -3rem;
+	margin-right: -3rem;
+	padding: 5rem;
+}
+.form-control {
+	max-width: 468px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	/* width: unset !important; */
+}
+.launchlist-form {
+	width: 30%;
+}
+.launchlist-form * {
+	width: 100%;
+	max-width: unset;
+}
+
+.main-img {
+	animation: to-top 1000ms;
+}
+.title {
+	animation: to-bottom 1000ms;
+}
+.center-content-1 {
+	animation: to-left 1000ms;
+}
+.center-content-2 {
+	animation: to-right 1000ms;
+}
+.form {
+	animation: fade 1000ms;
+}
+
+@media (max-width: 750px) {
+	.launchlist-form {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1052px) {
+	.card-box {
+		flex-direction: column;
+	}
+	.card {
+		width: 70% !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.launchlist-form {
+		width: 50%;
+	}
+}
