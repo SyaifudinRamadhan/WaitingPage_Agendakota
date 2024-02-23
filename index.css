@@ -127,12 +127,6 @@
 	animation: fade 1000ms;
 }
 
-@media (max-width: 750px) {
-	.launchlist-form {
-		width: 100%;
-	}
-}
-
 @media (max-width: 1052px) {
 	.card-box {
 		flex-direction: column;
@@ -144,5 +138,11 @@
 	}
 	.launchlist-form {
 		width: 50%;
+	}
+}
+
+@media (max-width: 750px) {
+	.launchlist-form {
+		width: 100%;
 	}
 }
